@@ -14,3 +14,13 @@
 	border-color:#D69782;
 }
 
+.bottom-bottom-table tr:first-child {
+	background-color: #586188;
+}
+
+.bottom-bottom-table tr:nth-child(2) td:nth-child(2n+1) {
+	background-color: #F5F0F7;
+}
+
+
+

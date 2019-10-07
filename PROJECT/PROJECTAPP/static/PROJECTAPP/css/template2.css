@@ -1,5 +1,4 @@
 * {
-	#border: 1px solid;
 	font-size: 14px;
 }
 
@@ -94,7 +93,7 @@
 
 .bottom {
 	display: grid;
-	grid-template-rows: 50% 50%;
+	grid-template-rows: 40% 60%;
 }
 
 .bottom-top {
@@ -131,12 +130,53 @@
 	text-align: right;
 }
 
-.bottom-top-right-table {
+.bottom-top-right-table, .bottom-bottom-table {
 	width: 100%;
 }
 
 .bottom-top-right-table td:first-child {
 	width: 35%;
+}
+
+.bottom-bottom-table td {
+	border: 1px solid;
+}
+
+.bottom-bottom-table tr:first-child td, .bottom-bottom-table tr:nth-child(2) td {
+	border: none;
+}
+
+.bottom-bottom-table tr:first-child, .bottom-bottom-table tr:nth-child(3), .bottom-bottom-table tr:nth-child(2) td:first-child {
+	text-align: center;
+}
+
+.bottom-bottom-table {
+	height: 95%;
+}
+
+.bottom-bottom-bottom {
+	position: relative;
+}
+
+.bottom-bottom-bottom div {
+	position: absolute;
+	top: -5%;
+}
+
+.bottom-bottom-bottom div:first-child { 
+	left: 5%;
+}
+
+.bottom-bottom-bottom div:nth-child(2) { 
+	left: 40%;
+}
+
+.bottom-bottom-bottom div:nth-child(3) { 
+	left: 60%;
+}
+
+.bottom-bottom-bottom div:nth-child(4) { 
+	left: 80%;
 }
 
 .bold {

@@ -1,4 +1,4 @@
-	.top-contain-right-table tr:first-child {
+.top-contain-right-table tr:first-child {
 	background-color: #4d4d4d;
 }
 
@@ -12,4 +12,16 @@
 
 .top-contain-right-table tr:nth-child(3) td:nth-child(2) {
 	border-color:#4C4C4C;
+}
+
+.bottom-bottom-table tr:first-child {
+	background-color: #4d4d4d;
+}
+
+.bottom-bottom-table tr:nth-child(2) td:nth-child(2n+1) {
+	background-color: #E5E5E4;
+}
+
+.bottom-bottom-table td {
+	border-color: #4d4d4d;
 }
