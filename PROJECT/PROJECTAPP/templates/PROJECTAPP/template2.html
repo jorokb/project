@@ -1,0 +1,78 @@
+<!-- this is for base html we use -->
+{% extends "PROJECTAPP/base.html" %}
+
+<!-- this is for directory of css -->
+{% block css %}{{block.super}}
+	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/template2.css">
+	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/template2-color.css">
+{% endblock %}
+
+<!-- this is for content -->
+{% block content %}{{block.super}}
+	<div class="div-base-page">
+		<div class="top">
+			<div class="top-contain">
+				<div class="top-contain-left">
+					<div class="top-contain-left-top">{% block headleft %}{% endblock %}</div>
+					<div class="top-contain-left-bottom">
+						<table class="top-contain-left-table">
+							<tr>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">RECEIPT NO.</span>
+								</td>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">DATE</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">PROJECT</span>
+								</td>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">UNIT NO.</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">RECEIVED FROM</span>
+								</td>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">CUSTOMER NO.</span>
+								</td>
+							</tr>
+							<tr>
+								<td rowspan="3">
+									<span class="dark-gray bold">?????????</span><span class="light-gray">ADDRESS</span>
+								</td>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">CONTRACT NO.</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">TAX ID</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">BRANCH</span>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div class="top-contain-right">
+					<p style="text-align: right;"><span class="dark-gray bold">?????????</span><span class="light-gray">(RECEIPT)</span></p>
+					<table>
+						
+					</table>
+				</div>
+			</div>
+			<div class="top-foot">
+				
+			</div>
+		</div>
+		<div class="middle"></div>
+		<div class="bottom"></div>
+	</div>
+{% endblock %}
