@@ -1,0 +1,23 @@
+.color1 {
+	background-color: #bb5f41;
+}
+
+.color2 {
+	background-color: #bb8d7e;
+}
+
+.color3 {
+	border: solid 2px #bb5f41;
+	border-left: none;
+	border-right: none;
+}
+
+.color4 {
+	border: solid 2px #bb5f41;
+	border-left: none;
+}
+
+.color5 {
+	border: solid 2px #bb5f41;
+	border-right: none;
+}

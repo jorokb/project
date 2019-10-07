@@ -1,0 +1,38 @@
+.contain {
+	padding: 0;
+	display: grid;
+	grid-template-columns: 15% 25% 60%;
+}
+
+.left {
+	padding-right: 20px;
+	border-right: 2px solid #000;
+}
+
+.middle {
+	padding-right: 20px;
+}
+
+.right {
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+.right p {
+	padding: 0;
+	margin: -5px;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.right div.address {
+	padding: 0;
+}
+
+h1, h2, h4 {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+p {
+	padding: 0;
+}

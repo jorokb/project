@@ -1,0 +1,28 @@
+<!-- this is for base html we use -->
+{% extends "PROJECTAPP/template1.html" %}
+
+<!-- this is for title -->
+{% block title %}PST{% endblock %}
+
+<!-- this is for directory of css -->
+{% block css %}{{block.super}}
+	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/lpn-pst.css">
+{% endblock %}
+
+<!-- this is for content -->
+{% block headleft %}
+	<div class="contain">
+		<div class="left">
+			<img src="/static/PROJECTAPP/img/logo-bw.jpg" width="100%"/>
+		</div>
+		<div class="right">
+			<div>
+				<p>Thai Words of Companion</p>
+				<p>PORNSANTI CO.,LTD.</p>
+			</div>
+			<div class="address">
+				Thai words of address.......................................
+			</div>
+		</div>
+	</div>
+{% endblock%}
