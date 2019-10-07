@@ -1,5 +1,5 @@
 * {
-	border: 1px solid;
+	#border: 1px solid;
 	font-size: 12px;
 }
 
@@ -28,8 +28,9 @@
 	grid-template-rows: 30% 70%;
 }
 
-.top-contain-left-table {
+.top-contain-left-table, .top-contain-right-table {
 	width: 100%;
+	height: 98%;
 }
 
 .top-contain-left-table td {
@@ -39,6 +40,56 @@
 
 .top-contain-left-table td:first-child {
 	width: 65%;
+}
+
+.top-contain-right-table tr:first-child {
+	text-align: center;
+}
+
+.top-contain-right-table tr:nth-child(2n+1) {
+	height:10%;
+}
+
+.top-contain-right-table tr:nth-child(2) {
+	height:80%;
+}
+
+.top-contain-right-table tr:nth-child(3) td {
+	border-bottom: 1px solid;
+	border-top: 1px solid;
+}
+
+.top-contain-right-table tr:nth-child(3) td:nth-child(2) {
+	text-align: right;
+	border-right: 1px solid;
+}
+
+.top-contain-right-table td:first-child {
+	width: 55%;
+}
+
+.top-foot {
+	text-align: center;
+}
+
+.middle {
+	border-top: 1px solid #B4B3B2;
+	border-bottom: 1px dashed #B4B3B2;
+	position: relative;
+}
+
+.middle div {
+	position: absolute;
+}
+
+.middle div:first-child {
+	bottom: 2%;
+	left: 1%;
+}
+
+.middle div:nth-child(2) {
+	bottom: 20%;
+	left: 50%;
 }
 
 .bold {

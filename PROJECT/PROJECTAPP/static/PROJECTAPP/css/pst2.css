@@ -1,23 +1,16 @@
-.color1 {
-	background-color: #bb5f41;
+.top-contain-right-table tr:first-child {
+	background-color: #CA7C64;
 }
 
-.color2 {
-	background-color: #bb8d7e;
+.top-contain-right-table tr:nth-child(2) td:nth-child(2n+1) {
+	background-color: #FEF3EE;
 }
 
-.color3 {
-	border: solid 2px #bb5f41;
-	border-left: none;
-	border-right: none;
+.top-contain-right-table tr:nth-child(3) td {
+	border-color:#D69782;
 }
 
-.color4 {
-	border: solid 2px #bb5f41;
-	border-left: none;
+.top-contain-right-table tr:nth-child(3) td:nth-child(2) {
+	border-color:#D69782;
 }
 
-.color5 {
-	border: solid 2px #bb5f41;
-	border-right: none;
-}
