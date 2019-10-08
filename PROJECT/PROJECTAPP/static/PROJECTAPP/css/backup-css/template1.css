@@ -1,0 +1,88 @@
+div {
+	padding: 5px;
+}
+
+#div-base-page {
+	width: 631.5px;
+	height: 892.5px;
+	padding: 10px;
+	margin: auto;
+	background-color: #FFFFFF;
+	display: grid;
+	grid-template-rows: 15% auto 5%;
+}
+
+#head {
+	display: grid;
+	grid-template-columns: 70% 30%;
+}
+
+#head-right {
+	position: relative;
+}
+
+#head-right div {
+	border: 1px solid #b5b5b5;
+	text-align: center;
+	position: absolute;
+	bottom: 30px;
+	right: 0;
+}
+
+p#thai-words {
+	font-weight: bold;
+}
+
+p#eng-words {
+	color: #b5b5b5;
+}
+
+#no-border {
+	border: none;
+}
+
+table, tr, td, #content-table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+#content-table {
+	padding: 0;
+	border: 1px solid #000000;
+}
+
+table {
+	width: 100%;
+}
+
+td {
+	padding: 5px 2px 2px 2px;
+	height: 35px;
+	border: 1px solid #b5b5b5;
+}
+
+tr td:first-child{
+	width: 70%;
+}
+
+td#blank-row {
+	height: 250px;
+}
+
+#foot-table {
+	height: 90px;
+	vertical-align: top;
+}
+
+#foot2-table {
+	vertical-align: bottom;
+	text-align: right;
+}
+
+#foot {
+	padding: 10px;
+}
+
+p {
+	margin-top: -5px;
+}

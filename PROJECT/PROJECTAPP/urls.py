@@ -9,4 +9,5 @@ urlpatterns = [
     path('LPP', views.lpp, name='lpp'),
     path('PST', views.pst, name='pst'),
     path('PST2', views.pst2, name='pst2'),
+    path('pdf', views.test_view),
 ]

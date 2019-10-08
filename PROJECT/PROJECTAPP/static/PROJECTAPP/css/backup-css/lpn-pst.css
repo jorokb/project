@@ -1,25 +1,22 @@
 #contain {
 	padding: 0;
 	display: grid;
-	grid-template-columns: 15% auto;
+	grid-template-columns: 15% 85%;
 }
 
 #right {
-	padding-left: 0;
+	padding-left: 10px;
+	
 }
 
 #right p {
 	padding: 0;
-	margin: -2px;
+	margin-top : 0;
 	font-weight: bold;
 }
 
 #right div#address {
-	padding: 0;
-}
-
-h1, h2, h4 {
-	font-family: "Arial Black", Gadget, sans-serif;
+	margin-top: -5px;
 }
 
 #color-blue {
