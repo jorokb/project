@@ -1,9 +1,10 @@
 .top-contain-right-table tr:first-child {
-	background-color: #CA7C64;
+	background-color: #cc6666;
 }
 
 .top-contain-right-table tr:nth-child(2) td:nth-child(2n+1) {
-	background-color: #FEF3EE;
+	background-color: #cc6666;
+	opacity: 0.08;
 }
 
 .top-contain-right-table tr:nth-child(3) td {

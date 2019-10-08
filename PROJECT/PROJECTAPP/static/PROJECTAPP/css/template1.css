@@ -3,13 +3,13 @@ div {
 }
 
 .div-base-page {
-	width: 842px;
-	height: 1190px;
+	width: 631.5px;
+	height: 892.5px;
 	padding: 10px;
 	margin: auto;
 	background-color: #FFFFFF;
 	display: grid;
-	grid-template-rows: 15% 70% 10%;
+	grid-template-rows: 15% auto 5%;
 }
 
 .head {
@@ -31,12 +31,11 @@ div {
 
 p.thai-words {
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 11px;
 }
 
 p.eng-words {
-	margin-top: -5px;
-	font-size: 12px;
+	font-size: 11px;
 	color: #b5b5b5;
 }
 
@@ -58,22 +57,22 @@ table {
 	width: 100%;
 }
 
-tr, td {
-	padding: 5px;
-	height: 50px;
+td {
+	padding: 5px 2px 2px 2px;
+	height: 35px;
 	border: 1px solid #b5b5b5;
 }
 
-td.blank-col {
-	width: 11%;
+tr td:first-child{
+	width: 70%;
 }
 
 td.blank-row {
-	height: 300px;
+	height: 250px;
 }
 
 .foot-table {
-	height: 100px;
+	height: 90px;
 	vertical-align: top;
 }
 
@@ -84,4 +83,8 @@ td.blank-row {
 
 .foot {
 	padding: 10px;
+}
+
+p {
+	margin-top: -5px;
 }

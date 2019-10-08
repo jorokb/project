@@ -1,15 +1,15 @@
 * {
-	font-size: 14px;
+	font-size: 11px;
 }
 
 .div-base-page {
-	width: 1190px;
-	height: 1264px;
+	width: 892.5px;
+	height: 948px;
 	padding: auto;
 	margin: auto;
 	background-color: #FFFFFF;
 	display: grid;
-	grid-template-rows: 45% 10% 45%;
+	grid-template-rows: 47% 6% 47%;
 }
 
 .top {
@@ -24,12 +24,17 @@
 
 .top-contain-left {
 	display: grid;
-	grid-template-rows: 30% 70%;
+	grid-template-rows: 20% 80%;
 }
 
 .top-contain-left-table, .top-contain-right-table {
 	width: 100%;
-	height: 98%;
+	height: 80%;
+}
+
+.top-contain-right-table {
+	width: 100%;
+	height: 90%;	
 }
 
 .top-contain-left-table td {
@@ -38,7 +43,7 @@
 }
 
 .top-contain-left-table td:first-child {
-	width: 65%;
+	width: 60%;
 }
 
 .top-contain-right-table tr:first-child {
@@ -109,7 +114,7 @@
 .bottom-top-left-content {
 	border: 1px solid #B4B3B2;
 	border-radius: 10px;
-	height: 100%;
+	height: 90%;
 	position: relative;
 }
 
@@ -160,7 +165,7 @@
 
 .bottom-bottom-bottom div {
 	position: absolute;
-	top: -5%;
+	margin-top: -0.5%;
 }
 
 .bottom-bottom-bottom div:first-child { 
@@ -184,11 +189,11 @@
 }
 
 span {
-	padding:0 5px 0 0;
-	margin:0;
+	padding: 0 4px 0 0;
+	margin: 0;
 }
 
 p {
-	padding:0;
-	margin:-7px 0 0 0;
+	padding: 0;
+	margin: 0;
 }
