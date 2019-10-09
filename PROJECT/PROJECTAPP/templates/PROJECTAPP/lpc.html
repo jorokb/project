@@ -5,8 +5,37 @@
 {% block title %}LPC{% endblock %}
 
 <!-- this is for directory of css -->
-{% block css %}{{block.super}}
-	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/lpc-lpp.css">
+
+{% block style %}
+    @frame {
+        -pdf-frame-content: left;
+        /*-pdf-frame-border: 1;*/
+        left: 24px;
+        top: 58px;
+        width: 49px;
+        height: 84px;
+    }
+	
+	@frame {
+        -pdf-frame-content: head-left-line;
+        left: 90px;
+        top: 58px;
+		width: 5px;
+    }
+	
+	@frame {
+        -pdf-frame-content: middle;
+        /*-pdf-frame-border: 1;*/
+        left: 120px;
+        top: 58px;
+    }
+	
+	@frame {
+        -pdf-frame-content: right;
+        /*-pdf-frame-border: 1;*/
+        left: 252.50px;
+        top: 58px;
+    }
 {% endblock %}
 
 <!-- this is for content -->
@@ -15,17 +44,22 @@
 		<div id="left">
 			<img src="/static/PROJECTAPP/img/logo-bw.jpg" width="100%"/>
 		</div>
+		<div id="head-left-line" style="background-color: #000; padding-bottom: 62px;">&nbsp;</div>
 		<div id="middle">
-			<h2>LPC</h1>
-			<h3>SERVICE</h2>
-			<h5>AND CARE</h4>
+			<h2 style="font-size:34px; margin-bottom: -15px;">LPC</h1>
+			<h3 style="font-size:21px; margin-top: -15px; margin-bottom: -10px;">SERVICE</h2>
+			<h5 style="font-size:13px; margin-top: -10px;;">AND CARE</h4>
 		</div>
 		<div id="right">
 			<div>
-				<p>Thai Words of Companion</p>
-				<p>LPC SOCIAL ENTERPRISE CO.,LTD.</p>
+				<p id="thai-title" style="font-weight:bold; margin-bottom: -5px;">
+					Thai Words of Companion
+				</p>
+				<p id="eng-title" style="font-weight:bold; margin-top: -5px; margin-bottom: -5px;">
+					LPC SOCIAL ENTERPRISE CO.,LTD.
+				</p>
 			</div>
-			<div id="address">
+			<div id="address" style="margin-top: -5px;">
 				Thai words of address.......................................
 			</div>
 		</div>

@@ -1,9 +1,10 @@
 * {
 	font-size: 11px;
+	-pdf-keep-with-next: true;
 }
 
-img {
-	zoom: 20%;
+p {
+	margin-bottom: -14px;
 }
 
 @font-face {

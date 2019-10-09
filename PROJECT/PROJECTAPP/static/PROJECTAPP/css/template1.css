@@ -1,32 +1,29 @@
 @page { 
-	size: 546px 773.5px;
-
-    @frame {
-        -pdf-frame-content: left;
-        /*-pdf-frame-border: 1;*/
-        right: 3cm;
-        width: 5cm;
-        top: 1cm;
-        height: 1cm;
-    }
+	size: 842px 1191px;
 }
 
-h1, h2, h3, h4 { /* Don't add an outline to the document */
-    -pdf-outline: false;
+#eng-words {
+	font-size: 9px;
 }
 
-.border {
-    border-top-width: 1px;
-    border-bottom-width: 1px;
-    border-left-width: 1px;
-    border-right-width: 1px;
-    
-    border-top-style: solid;
-    border-bottom-style: solid;
-    border-left-style: solid;
-    border-right-style: solid;
+td {
+	height: 53px;
+	width: 113px;
 }
 
-.top_image {
-    zoom: 80%;
+/*
+*/
+#thai-words {
+	border: 1px solid;
+	border-bottom: 0;
+	padding-top: 15px;
+	padding-left: 10px;
 }
+
+#eng-words {
+	border: 1px solid;
+	border-top: 0;
+	padding-bottom: 11px;
+	padding-left: 10px;
+}
+
