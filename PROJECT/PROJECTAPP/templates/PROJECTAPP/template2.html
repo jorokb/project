@@ -5,6 +5,89 @@
 {% block css %}{{block.super}}
 	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/template2.css">
 	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/template2-color.css">
+	<style>		
+		@page{
+			{% block style %}{% endblock %}
+			
+			@frame {
+				-pdf-frame-content: top;
+				/*-pdf-frame-border: 1;*/
+				left: 26px;
+				top: 21px;
+			}
+			
+			@frame {
+				-pdf-frame-content: middle;
+				/*-pdf-frame-border: 1;*/
+				top: 563px;
+			}
+			
+			@frame {
+				-pdf-frame-content: bottom;
+				/*-pdf-frame-border: 1;*/
+				left: 26px;
+				top: 714px;
+			}
+			
+			@frame {
+				-pdf-frame-content: top-contain-left-bottom;
+				/*-pdf-frame-border: 1;*/
+				left: 26px;
+				top: 128px;
+			}
+			
+			@frame {
+				-pdf-frame-content: top-contain-right;
+				/*-pdf-frame-border: 1;*/
+				left: 598px;
+				top: 21px;
+			}
+			
+			@frame {
+				-pdf-frame-content: top-foot;
+				/*-pdf-frame-border: 1;*/
+				left: 26px;
+				top: 507px;
+				width: 1191px;
+			}
+			
+			@frame {
+				-pdf-frame-content: bottom-top-left-content;
+				/*-pdf-frame-border: 1;*/
+				left: 26px;
+				top: 815px;
+				width: 536px;
+			}
+			
+			@frame {
+				-pdf-frame-content: bottom-top-left-content-div;
+				left: 26px;
+				top: 815px;
+				width: 536px;
+			}
+			
+			@frame {
+				-pdf-frame-content: bottom-top-right;
+				/*-pdf-frame-border: 1;*/
+				left: 602px;
+				top: 714px;
+			}
+						
+			@frame {
+				-pdf-frame-content: bottom-bottom-table;
+				/*-pdf-frame-border: 1;*/
+				left: 26px;
+				top: 973px;
+			}
+				
+			@frame {
+				-pdf-frame-content: bottom-bottom-bottom;
+				/*-pdf-frame-border: 1;*/
+				left: 26px;
+				top: 1229px;
+			}
+		}
+	</style>
 {% endblock %}
 
 <!-- this is for content -->
@@ -18,100 +101,111 @@
 						<table id="top-contain-left-table">
 							<tr>
 								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">RECEIPT NO.</span>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">RECEIPT NO.</span>
 								</td>
 								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">DATE</span>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">PROJECT</span>
-								</td>
-								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">UNIT NO.</span>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">DATE</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">RECEIVED FROM</span>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">PROJECT</span>
 								</td>
 								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">CUSTOMER NO.</span>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">UNIT NO.</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">RECEIVED FROM</span>
+								</td>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">CUSTOMER NO.</span>
 								</td>
 							</tr>
 							<tr>
 								<td rowspan="3">
-									<span id="dark-gray bold">?????????</span><span id="light-gray">ADDRESS</span>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">ADDRESS</span>
 								</td>
 								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">CONTRACT NO.</span>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">TAX ID</span>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">CONTRACT NO.</span>
 								</td>
 							</tr>
 							<tr>
 								<td>
-									<span id="dark-gray bold">?????????</span><span id="light-gray">BRANCH</span>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">TAX ID</span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span class="dark-gray bold">?????????</span><span class="light-gray">BRANCH</span>
 								</td>
 							</tr>
 						</table>
 					</div>
 				</div>
 				<div id="top-contain-right">
-					<p style="text-align: right;"><span id="dark-gray bold">?????????</span><span id="light-gray">(RECEIPT)</span></p>
+					<p style="text-align: right; padding-right: 21px;"><span class="dark-gray bold">?????????</span><span class="light-gray">(RECEIPT)</span></p>
 					<table id="top-contain-right-table">
-						<tr>
-							<td>
-								<p id="white bold">?????????????</p>
-								<p id="light-gray-2">DESCRIPTION</p>
+						<tr style="text-align: center;">
+							<td id="bg-color-1" colspan="3">
+								<p class="white bold">?????????????</p>
+								<p class="light-gray-2">DESCRIPTION</p>
 							</td>
-							<td>
-								<p id="white bold">?????????????</p>
-								<p id="light-gray-2">AMOUNT</p>
+							<td id="bg-color-1">
+								<p class="white bold" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">?????????????</p>
+								<p class="light-gray-2" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">AMOUNT</p>
 							</td>
-							<td>
-								<p id="white bold">?????????????</p>
-								<p id="light-gray-2">VAT 7%</p>
+							<td id="bg-color-1">
+								<p class="white bold" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">?????????????</p>
+								<p class="light-gray-2" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">VAT 7%</p>
 							</td>
-							<td>
-								<p id="white bold">?????????????</p>
-								<p id="light-gray-2">NET</p>
+							<td id="bg-color-1">
+								<p class="white bold" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">?????????????</p>
+								<p class="light-gray-2" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">NET</p>
 							</td>
 						</tr>
-						<tr>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
-							<td>&nbsp;</td>
+						<tr style="height: 373px;">
+							<td id="bg-color-2">&nbsp;</td>
+							<td id="bg-color-2">&nbsp;</td><td id="bg-color-2">&nbsp;</td><td>&nbsp;</td>
+							<td id="bg-color-2">&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td colspan="2">
-								<p id="dark-gray bold">?????????????</p>
-								<p id="light-gray">ALPHABET</p>
+								<p id="bg-color-3" class="dark-gray bold" style="border-top: 1px solid; padding-left: 5px;">?????????????</p>
+								<p id="bg-color-3" class="light-gray" style="border-bottom: 1px solid; padding-left: 5px;">ALPHABET</p>
 							</td>
 							<td>
-								<p id="dark-gray bold">??????</p>
-								<p id="light-gray">TOTAL</p>
+								<p id="bg-color-3" class="dark-gray bold" style="border-top: 1px solid;">&nbsp;</p>
+								<p id="bg-color-3" class="light-gray" style="border-bottom: 1px solid;">&nbsp;</p>
 							</td>
-							<td>&nbsp;</td>
+							<td>
+								<p id="bg-color-3" class="dark-gray bold" style="border-top: 1px solid;">&nbsp;</p>
+								<p id="bg-color-3" class="light-gray" style="border-bottom: 1px solid;">&nbsp;</p>
+							</td>
+							<td style="text-align: right;">
+								<p id="bg-color-3" class="dark-gray bold" style="border-top: 1px solid; border-right: 1px solid; padding-right: 5px;">??????</p>
+								<p id="bg-color-3" class="light-gray" style="border-bottom: 1px solid; border-right: 1px solid; padding-right: 5px;">TOTAL</p>
+							</td>
+							<td>
+								<p id="bg-color-3" class="dark-gray bold" style="border-top: 1px solid;">&nbsp;</p>
+								<p id="bg-color-3" class="light-gray" style="border-bottom: 1px solid;">&nbsp;</p>
+							</td>
 						</tr>
 					</table>
 				</div>
 			</div>
-			<div id="top-foot">
-				<p id="dark-gray bold">???????????????????????????????????????????????????????????????????????????????????????????????????????????</p>
-				<p id="light-gray">NO RECEIPT WITHOUT COLLECTOR'S NAME AND THAI RECEIPT IS NOT VALID UNTIL CHEQUE CLEAR</p>
+			<div id="top-foot" style="text-align: center;">
+				<p class="dark-gray bold" style="margin-bottom: -5px;">???????????????????????????????????????????????????????????????????????????????????????????????????????????</p>
+				<p class="light-gray" style="margin-top: -5px;">NO RECEIPT WITHOUT COLLECTOR'S NAME AND THAI RECEIPT IS NOT VALID UNTIL CHEQUE CLEAR</p>
 			</div>
 		</div>
-		<div id="middle">
-			<div id="light-gray">
+		<div id="middle" style="border-top: 1px solid; border-bottom: 1px dashed;">
+			<div class="light-gray" style="padding-top: 95px; padding-bottom: 14px; padding-left: 26px; margin-bottom: -128px;">
 				???????? : ???????????????????????????????????????
 			</div>
-			<div id="light-gray">
+			<div class="light-gray" style="padding-top: 70px; padding-bottom: 39px; padding-left: 595px; margin-top: -132px;">
 				Digital Signed by ?????????????????????????? (??????????)
 			</div>
 		</div>
@@ -119,119 +213,163 @@
 			<div id="bottom-top">
 				<div id="bottom-top-left">
 					<div>{% block headleft2 %}{% endblock %}</div>
+					<div id="bottom-top-left-content-div" style="border: 1px solid; border-radius: 50px; padding-bottom: 132px;">&nbsp;</div>
 					<div id="bottom-top-left-content">
 						<div>
-							<p id="dark-gray bold">?????????</p>
-							<p id="light-gray">NAME SURNAME</p>
+							<p class="dark-gray bold" style="padding-top: 10px; padding-left: 10px; margin-bottom: -5px;">?????????</p>
+							<p class="light-gray" style="margin-top: -5px; margin-bottom: -35px; padding-left: 10px;">NAME SURNAME</p>
 						</div>
 						<div>
-							<p id="light-gray">SERVICE CODE</p>
-							<p id="light-gray">REF 1</p>
-							<p id="light-gray">REF 2</p>
+							<p class="light-gray" style="padding-left: 400px; margin-bottom: -5px; margin-top: -35px;">SERVICE CODE</p>
+							<p class="light-gray" style="padding-left: 400px; margin-bottom: -5px; margin-top: -5px;">REF 1</p>
+							<p class="light-gray" style="padding-left: 400px; margin-top: -5px;">REF 2</p>
 						</div>
 						<div>
-							<p id="light-gray">----Barcode----</p>
+							<p class="light-gray" style="text-align: center;">----Barcode----</p>
 						</div>
 					</div>
 				</div>
 				<div id="bottom-top-right">
 					<div id="text-align-right">
-						<p id="dark-gray bold">?????????</p>
-						<p id="light-gray">PAY IN SLIP</p>
+						<p class="dark-gray bold" style="text-align: right; padding-right: 26px; margin-bottom: -5px;">?????????</p>
+						<p class="light-gray" style="text-align: right; padding-right: 26px; margin-top: -5px; margin-bottom: 70px">PAY IN SLIP</p>
 					</div>
-					<p id="light-gray">????????.......................????.......................................</p>
-					<p id="light-gray">??????????????????????????????????????????????????????????????????????</p>
+					<p class="light-gray">????????.......................????.......................................</p>
+					<p class="light-gray">??????????????????????????????????????????????????????????????????????</p>
 					<table id="bottom-top-right-table">
 						<tr>
-							<td id="light-gray">??????????</td>
-							<td id="light-gray">??????????</td>
+							<td class="light-gray">??????????</td>
+							<td class="light-gray">??????????</td>
 						</tr>
 						<tr>
-							<td id="light-gray">??????????</td>
-							<td id="light-gray">??????????</td>
+							<td class="light-gray">??????????</td>
+							<td class="light-gray">??????????</td>
 						</tr>
 						<tr>
-							<td id="light-gray">??????????</td>
-							<td id="light-gray">??????????</td>
+							<td class="light-gray">??????????</td>
+							<td class="light-gray">??????????</td>
 						</tr>
 					</table>
 				</div>
 			</div>
 			<div id="bottom-bottom">
-				<table id="bottom-bottom-table">
+				<table id="bottom-bottom-table" style="text-align: center;">
 					<tr>
-						<td colspan="2">
-							<p id="white bold">?????????</p>
-							<p id="light-gray">OUTSTANDING PAYMENT</p>
+						<td colspan="2" id="bg-color-4">
+							<p class="white bold" style="padding-top: 5px;">?????????</p>
+							<p class="light-gray">OUTSTANDING PAYMENT</p>
 						</td>
-						<td>
-							<p id="white bold">?????????</p>
-							<p id="light-gray">CURRENT PAYMENT</p>
+						<td id="bg-color-4">
+							<p class="white bold" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; padding-top: 5px;">?????????</p>
+							<p class="light-gray" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">CURRENT PAYMENT</p>
 						</td>
-						<td>
-							<p id="white bold">?????????</p>
-							<p id="light-gray">TOTAL PAYMENT</p>
+						<td id="bg-color-4">
+							<p class="white bold" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff; padding-top: 5px;">?????????</p>
+							<p class="light-gray" style="border-left: 1px solid #ffffff; border-right: 1px solid #ffffff;">TOTAL PAYMENT</p>
 						</td>
-						<td>
-							<p id="white bold">?????????</p>
-							<p id="light-gray">PAYMENT DUE DATE</p>
+						<td id="bg-color-4">
+							<p class="white bold" style="border-left: 1px solid #ffffff; padding-top: 5px;">?????????</p>
+							<p class="light-gray" style="border-left: 1px solid #ffffff;">PAYMENT DUE DATE</p>
 						</td>
 					</tr>
 					<tr>
-						<td colspan="2" id="dark-gray bold">??????????</td>
+						<td colspan="2" id="bg-color-5" class="dark-gray bold"  style="border-left: 1px solid; padding-top: 5px;">??????????</td>
 						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td id="bg-color-5">&nbsp;</td>
 						<td>&nbsp;</td>
 					</tr>
 					<tr>
 						<td>
-							<p id="dark-gray bold">?????????</p>
-							<p id="light-gray">CHEQUE NO.</p>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px;">?????????</p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">CHEQUE NO.</p>
 						</td>
 						<td>
-							<p id="dark-gray bold">?????????</p>
-							<p id="light-gray">CHEQUE DUE DATE</p>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px;">?????????</p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">CHEQUE DUE DATE</p>
 						</td>
 						<td>
-							<p id="dark-gray bold">?????????</p>
-							<p id="light-gray">BANK</p>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px;">?????????</p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">BANK</p>
 						</td>
 						<td>
-							<p id="dark-gray bold">?????????</p>
-							<p id="light-gray">BRANCH</p>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px;">?????????</p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">BRANCH</p>
 						</td>
 						<td>
-							<p id="dark-gray bold">?????????</p>
-							<p id="light-gray">AMOUNT</p>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px;">?????????</p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">AMOUNT</p>
 						</td>
 					</tr>
 					<tr>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td rowspan="3">&nbsp;</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td style="vertical-align: top;">
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; border-bottom: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
 					</tr>
 					<tr>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td>
+							<p class="dark-gray bold" style="border: 1px solid; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
+						<td style="vertical-align: top;">
+							<p class="dark-gray bold" style="border: 1px solid; border-top: none; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; border-bottom: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
 					</tr>
 					<tr>
-						<td id="light-gray">???/CASH</td>
-						<td colspan="3">????????????</td>
+						<td class="light-gray">
+							<p style="border: 1px solid; padding: 8px">???/CASH</p>
+						</td>
+						<td colspan="3" class="light-gray" style="text-align: left;">
+							<p style="border: 1px solid; padding: 8px">????????????</p>
+						</td>
+						<td style="vertical-align: top;">
+							<p class="dark-gray bold" style="border: 1px solid; border-top: none; border-bottom: none; padding-top: 3px">&nbsp;<p>
+							<p class="light-gray" style="border: 1px solid; border-top: none; padding-bottom: -3px;">&nbsp;</p>
+						</td>
 					</tr>
-					<tr>
-						<td colspan="4">???????????????????????</td>
-						<td>???????????????</td>
+					<tr style="text-align: left;">
+						<td colspan="4" class="light-gray" style="text-align: left;">
+							<p style="border: 1px solid; padding: 15px">??????????????????????</p>
+						</td>
+						<td class="light-gray" style="vertical-align: bottom;">
+							<p style="border: 1px solid; padding-top: 30px; padding-left: 5px;">????.................</p>
+						</td>
 					</tr>
 				</table>
 				<div id="bottom-bottom-bottom">
-					<div id="light-gray">???????</div>
-					<div id="light-gray">???????</div>
-					<div id="light-gray">???????</div>
-					<div id="light-gray">???????</div>
+					<div class="light-gray" style="padding-left: 84px; margin-bottom: -20px;">???????</div>
+					<div class="light-gray" style="padding-left: 497px; margin-top: -20px; margin-bottom: -20px;">???????</div>
+					<div class="light-gray" style="padding-left: 685px; margin-top: -20px; margin-bottom: -20px;">???????</div>
+					<div class="light-gray" style="padding-left: 956px; margin-top: -20px;">???????</div>
 				<div>
 			</div>
 		</div>

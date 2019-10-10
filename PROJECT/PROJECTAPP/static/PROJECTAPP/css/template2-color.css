@@ -1,15 +1,19 @@
-#dark-gray {
+.dark-gray {
 	color: #7f7f7f;
 }
 
-#light-gray {
+.light-gray {
 	color: #8c8c8c;
 }
 
-#light-gray-2 {
+.light-gray-2 {
 	color: #dcdbdb;
 }
 
-#white {
+.white {
 	color: #ffffff;
+}
+
+.bold {
+	font-weight: bold;
 }

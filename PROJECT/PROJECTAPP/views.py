@@ -7,7 +7,7 @@ from PROJECT.local import generate_pdf, render_to_pdf_response, pdf_decorator
 
 def test_view(request):
     resp = HttpResponse(content_type='application/pdf')
-    result = generate_pdf('PROJECTAPP/pst.html', file_object=resp)
+    result = generate_pdf('PROJECTAPP/pst2.html', file_object=resp)
     return result
 
 

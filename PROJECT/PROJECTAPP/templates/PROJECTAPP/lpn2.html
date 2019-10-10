@@ -9,23 +9,73 @@
 	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/lpn2-pst2.css">
 	<link rel="stylesheet" type="text/css" href="/static/PROJECTAPP/css/lpn2.css">
 {% endblock %}
+{% block style %}
+    @frame {
+        -pdf-frame-content: left;
+        /*-pdf-frame-border: 1;*/
+        left: 24px;
+        top: 21px;
+        width: 49px;
+        height: 84px;
+    }
+	
+	@frame {
+        -pdf-frame-content: right;
+        /*-pdf-frame-border: 1;*/
+		margin-bottom: 0;
+        left: 110px;
+        top: 21px;
+    }	
+	
+    @frame {
+        -pdf-frame-content: left2;
+        /*-pdf-frame-border: 1;*/
+        left: 24px;
+        top: 714px;
+        width: 49px;
+        height: 84px;
+    }
+	
+	@frame {
+        -pdf-frame-content: right2;
+        /*-pdf-frame-border: 1;*/
+		margin-bottom: 0;
+        left: 110px;
+        top: 714px;
+    }
+{% endblock %}
 
 <!-- this is for content -->
-{% block headleft2 %}
 {% block headleft %}
 	<div id="contain">
 		<div id="left">
-			<img src="/static/PROJECTAPP/img/logo-d.jpg" width="60%"/>
+			<img src="/static/PROJECTAPP/img/logo-d.jpg" width="100%"/>
 		</div>
 		<div id="right">
 			<div>
 				<p  id="color-blue">Thai Words of Companion</p>
 				<p  id="color-blue">L.P.N DEVELOPMENT PUBLIC CO.,LTD.</p>
 			</div>
-			<div id="address">
+			<div id="address2" style="font-weight: light;">
 				Thai words of address.......................................
 			</div>
 		</div>
 	</div>
 {% endblock%}
+
+{% block headleft2 %}
+	<div id="contain2">
+		<div id="left2">
+			<img src="/static/PROJECTAPP/img/logo-d.jpg" width="100%"/>
+		</div>
+		<div id="right2">
+			<div>
+				<p  id="color-blue">Thai Words of Companion</p>
+				<p  id="color-blue">L.P.N DEVELOPMENT PUBLIC CO.,LTD.</p>
+			</div>
+			<div id="address2" style="font-weight: light;">
+				Thai words of address.......................................
+			</div>
+		</div>
+	</div>
 {% endblock%}

@@ -1,27 +1,19 @@
-#top-contain-right-table tr:first-child {
-	background-color: #cc6666;
+#bg-color-1 {
+	background-color: #ca7c65;
 }
 
-#top-contain-right-table tr:nth-child(2) td:nth-child(2n+1) {
-	background-color: #cc6666;
-	opacity: 0#08;
+#bg-color-2 {
+	background-color: #fef3ed;
 }
 
-#top-contain-right-table tr:nth-child(3) td {
-	border-color:#D69782;
+#bg-color-3 {
+	border-color:#ca7c65;
 }
 
-#top-contain-right-table tr:nth-child(3) td:nth-child(2) {
-	border-color:#D69782;
+#bg-color-4 {
+	background-color: #586188;
 }
 
-#bottom-bottom-table tr:first-child {
-	background-color: .586188;
-}
-
-#bottom-bottom-table tr:nth-child(2) td:nth-child(2n+1) {
+#bg-color-5 {
 	background-color: #F5F0F7;
 }
-
-
-
