@@ -55,21 +55,21 @@
 			<table>
 				<tr>
 					<td colspan="4">
-						<p id="thai-words">??????????????</p>
-						<p id="eng-words">RECIVED FROM</p>
+						<p id="thai-words">ได้รับเงินจาก &nbsp;&nbsp; {{ buyer.name }}</p>
+						<p id="eng-words">RECEIVED FROM</p>
 					</td>
 					<td colspan="3">
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">เลขที่ใบเสร็จรับเงิน/ใบกำกับภาษี</p>
 						<p id="eng-words">RECEIPT / TAX INVOICE NO.</p>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="4">
-						<p id="thai-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">??????????????</p>
+						<p id="thai-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">ที่อยู่ &nbsp;&nbsp; {{ buyer.address}} {{ buyer.post_code }}</p>
 						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">ADDRESS</p>
 					</td>
 					<td colspan="3">
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">วันที่ &nbsp;&nbsp; {{ header.issue_dt}}</p>
 						<p id="eng-words" style="border-bottom: none;">DATE</p>
 					</td>
 				</tr>
@@ -87,59 +87,59 @@
 				<!------------------------------------------->
 				<tr>
 					<td id="no-border">
-						<p id="thai-words" style="border: none; border-left: 1px solid;">??????????????</p>
+						<p id="thai-words" style="border: none; border-left: 1px solid;">รหัสลูกค้า</p>
 						<p id="eng-words" style="border: none; border-left: 1px solid;">CUSTOMER NO.</p>
 					</td>
 					<td id="blank-col no-border">
 						&nbsp;
 					</td>
 					<td  id="no-border">
-						<p id="thai-words" style="border: none;">??????????????</p>
-						<p id="eng-words" style="border: none;">CONTACT NO.</p>
+						<p id="thai-words" style="border: none;">เลขที่สัญญา</p>
+						<p id="eng-words" style="border: none;">CONTRACT NO.</p>
 					</td>
 					<td id="blank-col no-border">
 						&nbsp;
 					</td>
 					<td colspan="3">
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">โครงการ &nbsp;&nbsp; {{ additional.project }}</p>
 						<p id="eng-words">PROJECT</p>
 					</td>
 				</tr>
 				<tr>
 					<td id="no-border">
-						<p id="thai-words" style="border: none; border-left: 1px solid;">??????????????</p>
+						<p id="thai-words" style="border: none; border-left: 1px solid;">เลขประจำตัวผู้เสียภาษี</p>
 						<p id="eng-words" style="border: none; border-left: 1px solid;">TAX ID</p>
 					</td>
 					<td id="blank-col no-border">
 						&nbsp;
 					</td>
 					<td  id="no-border">
-						<p id="thai-words" style="border: none;">??????????????<p>
+						<p id="thai-words" style="border: none;">สาขา<p>
 						<p id="eng-words" style="border: none;">BRANCH</p>
 					</td>
 					<td id="blank-col no-border">
 						&nbsp;
 					</td>
 					<td colspan="3">
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">ยูนิตเลขที่ &nbsp;&nbsp; {{ additional.unit_no }} </p>
 						<p id="eng-words">UNIT NO.</p>
 					</td>
 				</tr>
 				<tr>
 					<td colspan="4">
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">รายละเอียด</p>
 						<p id="eng-words">DESCRIPTION</p>
 					</td>
 					<td>
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">จำนวนเงิน</p>
 						<p id="eng-words">AMOUNT</p>
 					</td>
 					<td>
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">ภาษีมูลค่าเพิ่ม</p>
 						<p id="eng-words">VAT</p>
 					</td>
 					<td>
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">รวมสุทธิ</p>
 						<p id="eng-words">NET</p>
 					</td>
 				</tr>
@@ -265,11 +265,11 @@
 				<!------------------------------------------->
 				<tr>
 					<td colspan="3" id="no-border">
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">ตัวอักษร</p>
 						<p id="eng-words">ALPHABET</p>
 					</td>
 					<td id="no-border">
-						<p id="thai-words">??????????????</p>
+						<p id="thai-words">รวม</p>
 						<p id="eng-words">TOTAL</p>
 					</td>
 					<td>
@@ -287,8 +287,8 @@
 				</tr>
 				<tr>
 					<td colspan="7" id="">
-						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid; border-top: 1px solid; padding-top: 17px; padding-left: 10px; padding-bottom: -1px;">????????????????????????????????????????????????????????????????????????????????????????????????</p>
-						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">in case of payment paid cheque, this receipt will be valid only when the bank honour this cheque</p>
+						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid; border-top: 1px solid; padding-top: 17px; padding-left: 10px; padding-bottom: -1px;">**กรณีชำระด้วยเช็ค ใบเสร็จรับเงินนี้จะสมบูรณ์ต่อเมื่อบริษัทฯ ได้รับเงินตามเช็คแล้วเท่านั้น**</p>
+						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">In case of payment paid cheque, this receipt will be valid only when the bank honour this cheque</p>
 					</td>
 				</tr>
 				<!--i tried to create a space for this columns.-->
@@ -315,7 +315,7 @@
 			</table>
 		</div>
 		<div id="foot">
-			<p id="eng-words" style="border: none">????????????????????????????????????????????????????????????????????????????????????????????????</p>
+			<p id="eng-words" style="border: none">หมายเหตุ: เอกสารนี้ได้จัดทำและส่งข้อมูลให้แก่กรมสรรพากรด้วยวิธีทางอิเล็กทรงนิกส์</p>
 		</div>
 	</div>
 {% endblock %}
