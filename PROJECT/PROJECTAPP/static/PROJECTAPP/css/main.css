@@ -1,6 +1,7 @@
 * {
 	font-size: 11px;
 	-pdf-keep-with-next: true;
+	font-family: "TH Sarabun New";
 }
 
 p {
@@ -8,5 +9,12 @@ p {
 }
 
 @font-face {
-    font-family: DB Heavent Light;
+    font-family: "TH Sarabun New";
+	src: url("/static/PROJECTAPP/font/THSarabunNew.ttf");
+}
+
+@font-face {
+    font-family: "TH Sarabun New";
+	src: url("/static/PROJECTAPP/font/THSarabunNew-Bold.ttf");
+	font-weight: bold;
 }
