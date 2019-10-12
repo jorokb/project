@@ -2,10 +2,6 @@
 	size: 842px 1191px;
 }
 
-#eng-words {
-	font-size: 9px;
-}
-
 td {
 	height: 53px;
 	width: 113px;
@@ -16,19 +12,17 @@ td {
 #thai-words {
 	border: 1px solid;
 	border-bottom: 0;
-	padding-top: 15px;
 	padding-left: 10px;
+	padding-top: 5px;
 }
 
 #eng-words {
 	border: 1px solid;
 	border-top: 0;
-	padding-bottom: 11px;
 	padding-left: 10px;
 }
 
-.a {
-	height: 1000px;
-	border: 1px solid;
-}
 
+#table-items td {
+	width: 112px;
+}

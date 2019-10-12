@@ -1,11 +1,10 @@
 * {
-	font-size: 11px;
-	-pdf-keep-with-next: true;
+	font-size: 20px;
 	font-family: "TH Sarabun New";
 }
 
 p {
-	margin-bottom: -14px;
+	margin-bottom: -34px;
 }
 
 @font-face {

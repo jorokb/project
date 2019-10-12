@@ -12,7 +12,7 @@
 				-pdf-frame-content: head-right;
 				/*-pdf-frame-border: 1;*/
 				left: 612px;
-				top: 100px;
+				top: 90px;
 				width: 200px;
 			}
 			
@@ -29,6 +29,126 @@
 				left: 24px;
 				top: 1121px;
 			}
+			
+			@frame {
+				-pdf-frame-content: received-from;
+				left: 140px;
+				top: 199px;
+				width: 325px;
+				height: 40px;
+			}
+						
+			@frame {
+				-pdf-frame-content: invoice-no;
+				left: 665px;
+				top: 199px;
+				width: 145px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: address;
+				left: 140px;
+				top: 250px;
+				width: 325px;
+				height: 90px;
+			}
+			
+			@frame {
+				-pdf-frame-content: date;
+				left: 550px;
+				top: 250px;
+				width: 250px;
+				height: 90px;
+			}
+			
+			@frame {
+				-pdf-frame-content: customer-no;
+				left: 160px;
+				top: 355px;
+				width: 95px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: contact-no;
+				left: 360px;
+				top: 355px;
+				width: 95px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: tax-id;
+				left: 160px;
+				top: 408px;
+				width: 95px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: branch;
+				left: 360px;
+				top: 408px;
+				width: 95px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: project;
+				left: 550px;
+				top: 355px;
+				width: 250px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: unit-no;
+				left: 550px;
+				top: 408px;
+				width: 250px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: alphabet;
+				left: 160px;
+				top: 835px;
+				width: 190px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: amount-total;
+				left: 480px;
+				top: 835px;
+				width: 105px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: vat-total;
+				left: 593px;
+				top: 835px;
+				width: 105px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: net-total;
+				left: 706px;
+				top: 835px;
+				width: 105px;
+				height: 40px;
+			}
+			
+			@frame {
+				-pdf-frame-content: table-items-div;
+				left: 30px;
+				top: 505px;
+				width: 780px;
+				height: 300px;
+			}
 		}
 	</style>
 {% endblock %}
@@ -42,10 +162,10 @@
 			</div>
 			<div id="head-right"  style="border: 1px solid;">
 				<div>
-					<p id="thai-words" style="margin: 0; margin-bottom: -5px; border-bottom:none; padding-top: 15px; padding-left: 10px;">
+					<p id="thai-words" style="margin: 0; margin-bottom: -15px; border-bottom:none; padding-top: 5px; padding-left: 15px;">
 						ใบเสร็จรับเงิน/ใบกำกับภาษ
 					</p>
-					<p id="eng-words" style="margin: 0; margin-top: -5px;border-top:none; padding-left: 10px;">
+					<p id="eng-words" style="margin: 0; margin-top: -15px; border-top:none; padding-left: 15px;">
 						RECEIPT / TAX INVOICE
 					</p>
 				</div>
@@ -55,7 +175,7 @@
 			<table>
 				<tr>
 					<td colspan="4">
-						<p id="thai-words">ได้รับเงินจาก &nbsp;&nbsp; {{ buyer.name }}</p>
+						<p id="thai-words">ได้รับเงินจาก</p>
 						<p id="eng-words">RECEIVED FROM</p>
 					</td>
 					<td colspan="3">
@@ -65,11 +185,11 @@
 				</tr>
 				<tr>
 					<td colspan="4">
-						<p id="thai-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">ที่อยู่ &nbsp;&nbsp; {{ buyer.address}} {{ buyer.post_code }}</p>
+						<p id="thai-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">ที่อยู่</p>
 						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">ADDRESS</p>
 					</td>
 					<td colspan="3">
-						<p id="thai-words">วันที่ &nbsp;&nbsp; {{ header.issue_dt}}</p>
+						<p id="thai-words">วันที่</p>
 						<p id="eng-words" style="border-bottom: none;">DATE</p>
 					</td>
 				</tr>
@@ -101,7 +221,7 @@
 						&nbsp;
 					</td>
 					<td colspan="3">
-						<p id="thai-words">โครงการ &nbsp;&nbsp; {{ additional.project }}</p>
+						<p id="thai-words">โครงการ</p>
 						<p id="eng-words">PROJECT</p>
 					</td>
 				</tr>
@@ -121,7 +241,7 @@
 						&nbsp;
 					</td>
 					<td colspan="3">
-						<p id="thai-words">ยูนิตเลขที่ &nbsp;&nbsp; {{ additional.unit_no }} </p>
+						<p id="thai-words">ยูนิตเลขที่</p>
 						<p id="eng-words">UNIT NO.</p>
 					</td>
 				</tr>
@@ -287,7 +407,7 @@
 				</tr>
 				<tr>
 					<td colspan="7" id="">
-						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid; border-top: 1px solid; padding-top: 17px; padding-left: 10px; padding-bottom: -1px;">**กรณีชำระด้วยเช็ค ใบเสร็จรับเงินนี้จะสมบูรณ์ต่อเมื่อบริษัทฯ ได้รับเงินตามเช็คแล้วเท่านั้น**</p>
+						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid; border-top: 1px solid; padding-top: 4.5px; padding-left: 10px; padding-bottom: -1px;">**กรณีชำระด้วยเช็ค ใบเสร็จรับเงินนี้จะสมบูรณ์ต่อเมื่อบริษัทฯ ได้รับเงินตามเช็คแล้วเท่านั้น**</p>
 						<p id="eng-words" style="border: none; border-left: 1px solid; border-right: 1px solid;">In case of payment paid cheque, this receipt will be valid only when the bank honour this cheque</p>
 					</td>
 				</tr>
@@ -318,4 +438,78 @@
 			<p id="eng-words" style="border: none">หมายเหตุ: เอกสารนี้ได้จัดทำและส่งข้อมูลให้แก่กรมสรรพากรด้วยวิธีทางอิเล็กทรงนิกส์</p>
 		</div>
 	</div>
+	<!-- This is where your value set -->
+	<div id="received-from">
+		a	
+	</div>
+	<div id="invoice-no">
+		b
+	</div>
+	<div id="address">
+		c
+	</div>
+	<div id="date">
+		d
+	</div>
+	<div id="customer-no">
+		e
+	</div>
+	<div id="contact-no">
+		f
+	</div>
+	<div id="tax-id">
+		g
+	</div>
+	<div id="branch">
+		h
+	</div>
+	<div id="project">
+		j
+	</div>
+	<div id="unit-no">
+		k
+	</div>
+	<div id="alphabet">
+		l
+	</div>
+	<div id="amount-total">
+		m
+	</div>
+	<div id="vat-total">
+		n
+	</div>
+	<div id="net-total">
+		o
+	</div>
+	<div id="table-items-div">
+		<table id="table-items">
+		<!-- this is your loop items -->
+		{% for item in line_items %}
+			<tr>
+				<td style="width: 448px;">
+					<p style="">
+						p
+					</p>
+				</td>
+				<td>
+					<p style="padding-left: 5px;">
+						q
+					</p>
+				</td>
+				<td>
+					<p style="padding-left: 7px;">
+						r
+					</p>
+				</td>
+				<td>
+					<p style="padding-left: 9px;">
+						s
+					</p>
+				</td>
+			</tr>
+		{% endfor %}
+		<!----------------------------------->
+		</table>
+	</div>
+	<!----------------------------------->
 {% endblock %}

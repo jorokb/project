@@ -4,16 +4,16 @@
 }
 
 @page {
-	size: 1191px 1266px;
+	size: 1191px 1366px;
 }
 
 #top-contain-left-table td {
-	height: 60px;
+	height: 30px;
 	vertical-align: top;
 }
 
 #top-contain-left-table td:first-child {
-	width: 396px;
+	width: 350px;
 }
 
 #top-contain-left-table td:nth-child(2) {
