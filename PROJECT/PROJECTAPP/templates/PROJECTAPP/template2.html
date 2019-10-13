@@ -86,6 +86,12 @@
 				left: 26px;
 				top: 1333px;
 			}
+				
+			@frame {
+				-pdf-frame-content: table-items;
+				left: 598px;
+				top: 105px;
+			}
 		}
 	</style>
 {% endblock %}
@@ -148,7 +154,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td rowspan="6">
+								<td>
 									<span class="dark-gray bold">ที่อยู่</span><span class="light-gray">ADDRESS</span>
 								</td>
 								<td>
@@ -156,7 +162,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td>
+								<td rowspan=5>
 									<!--ADDRESS FROM--> &nbsp;
 								</td>
 								<td>
@@ -282,16 +288,25 @@
 					<p class="light-gray" style="margin-bottom: -15px; margin-top: -15px">เพื่อนำเข้าบัญชี บริษัท แอล.พี.เอ็น.ดีเวลลอปเมนท์ จำกัด (มหาชน)</p>
 					<table id="bottom-top-right-table">
 						<tr>
-							<td class="light-gray" style="padding: 0; padding-top: 5px">ธนาคารกสิกรไทย</td>
-							<td class="light-gray" style="padding: 0;">#064-1-06167-0</td>
+							<td style="width: 95px;">
+								<img src="/static/PROJECTAPP/img/squere-row1.jpg" style=""/>
+							</td>
+							<td class="light-gray" style="padding: 3px; width: 230px;">ธนาคารกสิกรไทย</td>
+							<td class="light-gray" style="padding: 3px;">#064-1-06167-0</td>
 						</tr>
 						<tr>
-							<td class="light-gray" style="padding: 0;">ธนาคารกรุงเทพ</td>
-							<td class="light-gray" style="padding: 0;">BR.NO.0124 Comp. Code 12430 Service Code LPN</td>
+							<td style="width: 95px;">
+								<img src="/static/PROJECTAPP/img/squere-row2.jpg" style=""/>
+							</td>
+							<td class="light-gray" style="padding: 3px; width: 230px;">ธนาคารกรุงเทพ</td>
+							<td class="light-gray" style="padding: 3px;">BR.NO.0124 Comp. Code 12430 Service Code LPN</td>
 						</tr>
 						<tr>
-							<td class="light-gray" style="padding: 0;">ธนาคารกรุงศรีอยุธยา</td>
-							<td class="light-gray" style="padding: 0;">#256-0-01263-5</td>
+							<td style="width: 95px;">
+								<img src="/static/PROJECTAPP/img/squere-row3.jpg" style=""/>
+							</td>
+							<td class="light-gray" style="padding: 3px; width: 230px;">ธนาคารกรุงศรีอยุธยา</td>
+							<td class="light-gray" style="padding: 3px;">#256-0-01263-5</td>
 						</tr>
 					</table>
 				</div>
@@ -390,7 +405,10 @@
 					</tr>
 					<tr>
 						<td class="light-gray">
-							<p style="border: 1px solid; padding: 8px">เงินสด/CASH</p>
+							<p style="border: 1px solid; padding: 8px;">
+								<img src="/static/PROJECTAPP/img/squere.jpg" style="zoom: 7%;"/>&nbsp;
+								เงินสด/CASH
+							</p>
 						</td>
 						<td colspan="3" class="light-gray" style="text-align: left;">
 							<p style="border: 1px solid; padding: 8px">จำนวนเงินเป็นตัวอักษร</p>
@@ -419,4 +437,19 @@
 			</div>
 		</div>
 	</div>
+	
+	<!-- do your loop here -->
+	<div id="table-items">
+		<table>
+			{% for item in line_items %}
+			<tr">
+				<td id="bg-color-2" style="width: 285px;">&nbsp;a</td>
+				<td>&nbsp;b</td>
+				<td id="bg-color-2">&nbsp;c</td>
+				<td>&nbsp;d</td>
+			</tr>
+			{% endfor %}
+		</table>
+	</div>
+	<!--------------------->
 {% endblock %}

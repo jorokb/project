@@ -34,11 +34,14 @@
 }
 
 #bottom-top-right-table td{
-	padding: 5px;
 }
 
 #bottom-bottom-table td {
 	width: 228px;
 	margin-top: -5px;
 	margin-bottom: -5px;
+}
+
+#table-items td {
+	width: 95px;
 }
